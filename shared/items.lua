@@ -392,4 +392,583 @@ QBShared.Items = {
 	['markedbills'] 				 = {['name'] = 'markedbills', 			  	  	['label'] = 'Marked Money', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'markedbills.png', 			['unique'] = true, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Money?'},
 	['labkey'] 			 			 = {['name'] = 'labkey', 						['label'] = 'Key', 						['weight'] = 500, 		['type'] = 'item', 		['image'] = 'labkey.png', 				['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Key for a lock...?'},
 	['printerdocument'] 			 = {['name'] = 'printerdocument', 				['label'] = 'Document', 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'printerdocument.png', 		['unique'] = true, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A nice document'},
+
+
+	-- Weed Shop
+	['streetweed'] 			    	 = {['name'] = 'streetweed', 			    	['label'] = 'Street Weed', 		    	['weight'] = 500, 		['type'] = 'item', 		["image"] = "weed_baggy.png",       	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "To make into Joints."},
+	['weedbud'] 			    	 = {['name'] = 'weedbud', 			        	['label'] = 'Weed Bud', 		    	['weight'] = 500, 		['type'] = 'item', 		["image"] = "weedbud.png",           	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Grind into Useable Form."},
+	['empty_weed_bag'] 				 = {['name'] = 'empty_weed_bag', 			    ['label'] = 'Empty Weed Bag', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'weed_baggy_empty.png', 	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A small empty bag'},
+	['wet_weed'] 		 	 	 	 = {['name'] = 'wet_weed',           			['label'] = 'Wet Weed',	 		    	['weight'] = 2000, 		['type'] = 'item', 		["image"] = "wet.png", 		        	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Wet weed that needs to be treated!"},
+    ['rolling_paper'] 			 	 = {['name'] = 'rolling_paper', 			  	['label'] = 'Rolling Paper', 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'rolling_paper.png', 		['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Paper made specifically for encasing and smoking tobacco or cannabis.'},
+	['weed-gift-set'] 		 	     = {['name'] = 'weed-gift-set', 		    	['label'] = 'Gift Set', 		    	['weight'] = 1500, 		['type'] = 'item', 		["image"] = "weed-gift-set.png", 	    ["unique"] = true, 	    ["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "An Amazing Gift Set For 420 Lovers. Now with a random surprise"},
+	['gift-box'] 			     	 = {['name'] = 'gift-box', 			        	['label'] = 'Empty Gift Box', 		   	['weight'] = 1000, 		['type'] = 'item', 		["image"] = "gift-box.png",          	["unique"] = true, 	    ["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Empty Box to Add Items to."},
+	['brownie-mix'] 		 	 	 = {['name'] = 'brownie-mix',           		['label'] = 'Brownie Mix',	 		   	['weight'] = 1000, 		['type'] = 'item', 		["image"] = "brownie-mix.png", 	    	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Make into Weed Brownies!"},
+    ["weed-brownie"] 		 	 	 = {['name'] = "weed-brownie",           		['label'] = "Weed Brownie",	 		   	['weight'] = 1000, 		['type'] = 'item', 		["image"] = 'weed-brownie.png', 	   	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Weed Brownie!"},
+    ['aluminumcan'] 				 = {['name'] = 'aluminumcan', 			  	  	['label'] = 'Aluminum Can', 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'aluminumcan.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = "Aluminum Cans"},
+	['drink-mix'] 		 	    	 = {['name'] = 'drink-mix',              		['label'] = 'Drink Mix',	 	     	['weight'] = 1000, 		['type'] = 'item', 		["image"] = "drink-mix.png", 	    	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Make into Energy Drinks!"},
+    ["weed-drink"] 		 	    	 = {['name'] = "weed-drink",           	    	['label'] = "Stoned Energy Drink",	   	['weight'] = 1000, 		['type'] = 'item', 		["image"] = "weed-drink.png", 	    	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   ["description"] = "Energy Drink Infused with Lovely THC&CBD!"},
+    ['dream-joint'] 				 = {['name'] = 'dream-joint', 			  	  	['label'] = "Dream Joint", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'dream-joint.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'joint made from dream weed'},
+	['hazy-joint'] 					 = {['name'] = 'hazy-joint', 			  	  	['label'] = "Hazy Joint", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'hazy-joint.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'joint made from hazy weed'},
+	['crush-joint'] 				 = {['name'] = 'crush-joint', 			  	  	['label'] = "Crush Joint", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'crush-joint.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'joint made from crush weed'},
+	['bloomer-joint'] 				 = {['name'] = 'bloomer-joint', 		  		['label'] = "Bloomer Joint", 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'bloomer-joint.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'joint made from bloomer weed'},
+	['dream-bud'] 				     = {['name'] = 'dream-bud', 			  	  	['label'] = "Dream Bud", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'dream-bud.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A Dream Weed Bud'},
+	['hazy-bud'] 					 = {['name'] = 'hazy-bud', 			  	     	['label'] = "Hazy Bud", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'hazy-bud.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A Hazy Weed Bud'},
+	['crush-bud'] 				     = {['name'] = 'crush-bud', 			  	  	['label'] = "Crush Bud", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'crush-bud.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A Crush Weed Bud'},
+	['bloomer-bud'] 				 = {['name'] = 'bloomer-bud', 		  	    	['label'] = "Bloomer Bud", 			    ['weight'] = 500, 		['type'] = 'item', 		['image'] = 'bloomer-bud.png', 	    	['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'A Bloomer Weed Bud'},
+	['dream-weed'] 				     = {['name'] = 'dream-weed', 			  	  	['label'] = "Dream Weed", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'dream-weed.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Ground Dream Weed'},
+	['hazy-weed'] 					 = {['name'] = 'hazy-weed', 			  	  	['label'] = "Hazy Weed", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'hazy-weed.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Ground Hazy Weed'},
+	['crush-weed'] 				     = {['name'] = 'crush-weed', 			  	  	['label'] = "Crush Weed", 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'crush-weed.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Ground Crush Weed'},
+	['bloomer-weed'] 				 = {['name'] = 'bloomer-weed', 		  	    	['label'] = "Bloomer Weed", 			['weight'] = 500, 		['type'] = 'item', 		['image'] = 'bloomer-weed.png', 		['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Ground Bloomer Weed'},
+	
+
+
+	--Hunting 
+ 	["bait"] 					 = {["name"] = "bait", 							["label"] = "Hunting Bait", 		["weight"] = 150, 		["type"] = "item", 		["image"] = "bait.png", 			["unique"] = false,  	["useable"] = true, 	["shouldClose"] = true, 	   ["combinable"] = nil,  ["description"] = "Bait for hunting!"},
+	["pelt1"] 					 = {["name"] = "pelt1", 						["label"] = "Pelt Tier 1", 			["weight"] = 25, 		["type"] = "item", 		["image"] = "pelt1.png", 			["unique"] = false,  	["useable"] = true, 	["shouldClose"] = true, 	   ["combinable"] = nil,  ["description"] = "Tier 1 Pelt from hunting its... ok"},
+	["pelt2"] 					 = {["name"] = "pelt2", 						["label"] = "Pelt Tier 2", 			["weight"] = 35, 		["type"] = "item", 		["image"] = "pelt2.png", 			["unique"] = false,  	["useable"] = true, 	["shouldClose"] = true, 	   ["combinable"] = nil,  ["description"] = "Tier 2 Pelt from hunting its decent"},
+	["pelt3"] 					 = {["name"] = "pelt3", 						["label"] = "Pelt Tier 3", 			["weight"] = 50, 		["type"] = "item", 		["image"] = "pelt3.png", 			["unique"] = false,  	["useable"] = true, 	["shouldClose"] = true, 	   ["combinable"] = nil,  ["description"] = "Tier 3 Pelt from hunting it looks pretty good!"},
+	["pelt4"] 					 = {["name"] = "pelt4", 						["label"] = "Rare Pelt", 			["weight"] = 65, 		["type"] = "item", 		["image"] = "pelt4.png", 			["unique"] = false,  	["useable"] = true, 	["shouldClose"] = true, 	   ["combinable"] = nil,  ["description"] = "Rare Pelt from hunting rare good quality!"},
+	["pelt5"] 					 = {["name"] = "pelt5", 						["label"] = "Extra Rare Pelt", 		["weight"] = 80, 		["type"] = "item", 		["image"] = "pelt5.png", 			["unique"] = false,  	["useable"] = true, 	["shouldClose"] = true, 	   ["combinable"] = nil,  ["description"] = "Extra Rare Pelt from hunting. You must be a perfect hunter!"},
+
+
+  	-- Regular Fish
+	['stingray'] 			     	 = {['name'] = 'stingray', 				    ['label'] = 'Stingray',            		['weight'] = 2500,      ['type'] = 'item',      ['image'] = 'stingray.png',         	['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Stingray'},
+	['flounder'] 			     	 = {['name'] = 'flounder', 				    ['label'] = 'Flounder',            		['weight'] = 2500,      ['type'] = 'item',      ['image'] = 'flounder.png',         	['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Flounder'},
+	['codfish'] 			     	 = {['name'] = 'codfish', 				    ['label'] = 'Cod',            			['weight'] = 2500,      ['type'] = 'item',      ['image'] = 'codfish.png',         		['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Cod'},
+	['mackerel'] 			     	 = {['name'] = 'mackerel', 				    ['label'] = 'Mackerel',            		['weight'] = 2500,      ['type'] = 'item',      ['image'] = 'mackerel.png',         	['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Mackerel'},
+	['bass'] 			 		 	 = {['name'] = 'bass', 						['label'] = 'Bass',                     ['weight'] = 1250,      ['type'] = 'item',      ['image'] = 'bass.png',                 ['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'A normal fish Tatses pretty good!'},
+	
+	-- Trash Items
+	['fishingtin'] 			 	 	 = {['name'] = 'fishingtin', 				['label'] = 'Fishing Tin', 				['weight'] = 2500, 		['type'] = 'item', 		['image'] = 'fishingtin.png', 			['unique'] = false,    ['useable'] = false, 	['shouldClose'] = false,	 ['combinable'] = nil,   ['description'] = 'Fishing Tin'},	
+	['fishingboot'] 			 	 = {['name'] = 'fishingboot', 				['label'] = 'Fishing Boot', 			['weight'] = 2500, 		['type'] = 'item', 		['image'] = 'fishingboot.png', 			['unique'] = false,    ['useable'] = false, 	['shouldClose'] = false,	 ['combinable'] = nil,   ['description'] = 'Fishing Boot'},	
+	
+	-- Exotic Fish
+	['killerwhale'] 			 	 = {['name'] = 'killerwhale', 				['label'] = 'Whale', 					['weight'] = 15000, 	['type'] = 'item', 		['image'] = 'killerwhale.png', 			['unique'] = false, 	   ['useable'] = false, 	['shouldClose'] = false,	 ['combinable'] = nil,   ['description'] = 'Killer Whale'},	
+	['dolphin'] 			     	 = {['name'] = 'dolphin', 					['label'] = 'Dolphin',          		['weight'] = 5000,      ['type'] = 'item',      ['image'] = 'dolphin.png',       		['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Dolphin'},
+	['sharkhammer'] 			     = {['name'] = 'sharkhammer', 				['label'] = 'Shark',         			['weight'] = 5000,      ['type'] = 'item',      ['image'] = 'sharkhammer.png',       	['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Hammerhead Shark'},
+	['sharktiger'] 			     	 = {['name'] = 'sharktiger', 				['label'] = 'Shark',          			['weight'] = 5000,      ['type'] = 'item',      ['image'] = 'sharktiger.png',       	['unique'] = false,     ['useable'] = false,     ['shouldClose'] = false,     ['combinable'] = nil,   ['description'] = 'Tigershark'},
+	
+	-- Gear
+	['fishbait'] 			     	 = {['name'] = 'fishbait', 					['label'] = 'Fish Bait', 				['weight'] = 400, 		['type'] = 'item', 		['image'] = 'fishbait.png', 			['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Fishing bait'},
+	['fishingrod'] 			 		 = {['name'] = 'fishingrod', 				['label'] = 'Fishing Rod', 				['weight'] = 750, 		['type'] = 'item', 		['image'] = 'fishingrod.png', 			['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A fishing rod for adventures with friends!!'},	
+	['anchor'] 			 	 		 = {['name'] = 'anchor', 					['label'] = 'Boat Anchor', 				['weight'] = 2500, 		['type'] = 'item', 		['image'] = 'anchor.png', 				['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Boat Anchor'},	
+	['fishicebox'] 			 	 	 = {['name'] = 'fishicebox', 				['label'] = 'Fishing Ice Chest', 		['weight'] = 2500, 		['type'] = 'item', 		['image'] = 'fishicebox.png', 			['unique'] = true,     ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Ice Box to store all of your fish'},	
+	
+	-- Rewards
+	['fishingloot'] 			 	 = {['name'] = 'fishingloot', 				['label'] = 'Metal Box', 				['weight'] = 500, 		['type'] = 'item', 		['image'] = 'fishingloot.png', 			['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Seems to be a corroded from the salt water, Should be easy to open'},	
+	['fishinglootbig'] 			 	 = {['name'] = 'fishinglootbig', 			['label'] = 'Treasure Chest', 			['weight'] = 2500, 		['type'] = 'item', 		['image'] = 'fishinglootbig.png', 		['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'The lock seems to be intact, Might need a key'},	
+	['fishingkey'] 			 	 	 = {['name'] = 'fishingkey', 			    ['label'] = 'Corroded Key', 			['weight'] = 100, 		['type'] = 'item', 		['image'] = 'fishingkey.png', 		    ['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A weathered key that looks usefull'},	
+	['fishtacklebox'] 			 	 = {['name'] = 'fishtacklebox', 			['label'] = 'Tackle Box', 				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'fishtacklebox.png', 		['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Seems to be left over tackle box from another fisherman'},	
+	['pearlscard'] 			 	 	 = {['name'] = 'pearlscard', 				['label'] = 'Pearls Seafood', 			['weight'] = 100, 		['type'] = 'item', 		['image'] = 'pearlscard.png', 			['unique'] = false,    ['useable'] = true, 	   ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'A special member of Pearl\'s Seafood Restaurant'},	
+
+
+	--Vangelicos item 
+	["usb_green"] 		 	     	 = {["name"] = "usb_green", 					["label"] = "Green USB", 				["weight"] = 5000, 	    ["type"] = "item", 		["image"] = "usb_green.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = "What is this USB used for?"},
+
+
+	-- Hunting
+	["meatdeer"] 		 			 	 = {["name"] = "meatdeer",       	    		["label"] = "Deer Horns",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "deerhorns.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Deer Horns"},
+	["meatpig"] 		 			 	 = {["name"] = "meatpig",       	    		["label"] = "Pig Meat",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "pigpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Pig Meat"},
+	["meatboar"] 		 			 	 = {["name"] = "meatboar",       	    		["label"] = "Boar Tusks",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "boartusks.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Boar Tusks"},
+	["meatlion"] 		 			 	 = {["name"] = "meatlion",       	    		["label"] = "Cougar Claws",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "cougarclaw.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Cougar Claw"},
+	["meatcow"] 		 			 	 = {["name"] = "meatcow",       	    		["label"] = "Cow Pelt",	 					["weight"] = 100, 		["type"] = "item", 		["image"] = "cowpelt.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Cow Pelt"},
+	["meatrabbit"] 		 			 	 = {["name"] = "meatrabbit",       	    		["label"] = "Rabbit Fur",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "rabbitfur.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Rabbit Fur"},
+	["meatbird"] 		 			 	 = {["name"] = "meatbird",       	    		["label"] = "Bird Feather",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "birdfeather.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Bird Feather"},
+	["meatcoyote"] 		 			 	 = {["name"] = "meatcoyote",       	    		["label"] = "Coyote Pelt",	 				["weight"] = 100, 		["type"] = "item", 		["image"] = "coyotepelt.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Coyote Pelt"},
+	["huntingbait"] 		 			 = {["name"] = "huntingbait",       	    	["label"] = "Hunting Bait",	 				["weight"] = 150, 		["type"] = "item", 		["image"] = "huntingbait.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Hunting Bait"},
+
+	["rentalpapers"]				 = {["name"] = "rentalpapers", 					["label"] = "Rental Papers", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "rentalpapers.png", 		["unique"] = true, 		["useable"] = false, 	["shouldClose"] = false, 	["combinable"] = nil, 	["description"] = "Yea, this is my car i can prove it!"},
+
+	--Pizzeria
+		['pmenu'] 	 			 		 = {['name'] = 'pmenu',							['label'] = 'Pizza This Menu',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmenu.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pizza This Menu'},
+		['pwineglass'] 	 			 	 = {['name'] = 'pwineglass',					['label'] = 'Wine Glass',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwineglass.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Wine Glass'},
+		['pwhiskyglass'] 	 			 = {['name'] = 'pwhiskyglass',					['label'] = 'Whiskey Glass',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwhiskyglass.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Whiskey Glass'},
+		['pbeermug'] 	 			 	 = {['name'] = 'pbeermug',						['label'] = 'Beer Empty Mug',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbeermug.png',		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Beer Empty Mug'},
+		['pbeermugfull'] 	 			 = {['name'] = 'pbeermugfull',					['label'] = 'Beer Mug',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbeermugfull.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Beer Mug'},
+		['predwine'] 	 				 = {['name'] = 'predwine',						['label'] = 'Red Wine',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'predwine.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Red Wine'},
+		['pwhitewine'] 	 				 = {['name'] = 'pwhitewine',					['label'] = 'White Wine',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwhitewine.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'White Wine'},
+		['ppinkwine'] 	 				 = {['name'] = 'ppinkwine',						['label'] = 'Pink Wine',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppinkwine.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pink Wine'},
+		['pwhiskey'] 	 				 = {['name'] = 'pwhiskey',						['label'] = 'Whiskey',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwhiskey.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Whiskey'},
+		['pdusche'] 	 				 = {['name'] = 'pdusche',						['label'] = 'Dusche Beer',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pdusche.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Dusche Beer'},
+		['plogger'] 	 				 = {['name'] = 'plogger',						['label'] = 'Logger Beer',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'plogger.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Logger Beer'},
+		['pam'] 	 			 		 = {['name'] = 'pam',							['label'] = 'AM Beer',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pam.png',			['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'AM Beer'},
+		['pgoldsake'] 	 			 	 = {['name'] = 'pgoldsake',						['label'] = 'Gold Sake',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pgoldsake.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Gold Sake'},
+		['prum'] 	 			 		 = {['name'] = 'prum',							['label'] = 'Rum',				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'prum.png',			['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Rum'},
+		['pwhitewinebottle'] 	 		 = {['name'] = 'pwhitewinebottle',				['label'] = 'White Wine Bottle',['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwhitewinebottle.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'White Wine Bottle'},
+		['pwhiskeybottle'] 	 			 = {['name'] = 'pwhiskeybottle',				['label'] = 'Whiskey Bottle',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwhiskeybottle.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Whiskey Bottle'},
+		['pchampagne'] 	 			 	 = {['name'] = 'pchampagne',					['label'] = 'Champagne Bottle',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pchampagne.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Champagne Bottle'},
+		['porange'] 	 		 		 = {['name'] = 'porange',						['label'] = 'Orange',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'porange.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Orange'},
+		['pbanana'] 	 			 	 = {['name'] = 'pbanana',						['label'] = 'Banana',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbanana.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Banana'},
+		['papple'] 	 			 	 	 = {['name'] = 'papple',						['label'] = 'Apple',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'papple.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Apple'},
+		['pwatercup'] 	 			 	 = {['name'] = 'pwatercup',						['label'] = 'Water Cup',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwatercup.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Water Cup'},
+		['pdough'] 	 			 	 	 = {['name'] = 'pdough',						['label'] = 'Ready Pizza Dough',['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pdough.png',		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Ready Pizza Dough'},
+		['predwinebottle'] 	 			 = {['name'] = 'predwinebottle',				['label'] = ' Regular Red Wine Bottle',['weight'] = 1000,['type'] = 'item', 		['image'] = 'predwinebottle.png',['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Regular Red Wine'},
+		['pcastellobrolio'] 	 		 = {['name'] = 'pcastellobrolio',				['label'] = 'Castello Brolio Red Wine',['weight'] = 1000,['type'] = 'item', 	['image'] = 'pcastellobrolio.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Castello Brolio Red Wine'},
+		['pgaryfarrel'] 	 			 = {['name'] = 'pgaryfarrel',					['label'] = 'Gary Garrel Red Wine',['weight'] = 1000, 	['type'] = 'item', 		['image'] = 'pgaryfarrel.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Gary Farrel Red Wine'},
+		['prutherfordhill'] 	 		 = {['name'] = 'prutherfordhill',				['label'] = 'Rutherford Hill Red Wine',['weight'] = 1000,['type'] = 'item', 	['image'] = 'prutherfordhill.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Rutherford Hill Red Wine'},
+		['psparklingwine'] 	 			 = {['name'] = 'psparklingwine',				['label'] = 'Sparkling Wine',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'psparklingwine.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Sparkling Wine'},
+		['ppinkwinebottle'] 	 		 = {['name'] = 'ppinkwinebottle',				['label'] = 'Pink Wine Bottle',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppinkwinebottle.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pink Wine Bottle'},
+		['ppizzaflour'] 	 		 	 = {['name'] = 'ppizzaflour',					['label'] = 'Pizza Flour',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzaflour.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pizza Flour'},
+		['pwater'] 	 		 		 	 = {['name'] = 'pwater',						['label'] = 'Water',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pwater.png',		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Water'},
+		['psalt'] 	 		 			 = {['name'] = 'psalt',							['label'] = 'Salt',				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'psalt.png',		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Salt'},
+		['poil'] 	 		 			 = {['name'] = 'poil',							['label'] = 'Oil',				['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'poil.png',			['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Oil'},
+		['pbigdough'] 	 		 		 = {['name'] = 'pbigdough',						['label'] = 'Pizza Dough',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbigdough.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pizza Dough'},
+		['pespressomacchiato'] 	     	 = {['name'] = 'pespressomacchiato', 			['label'] = 'Espresso Macchiato',['weight'] = 1000, 	['type'] = 'item', 		['image'] = 'pespressomacchiato.png',['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Espresso Macchiato'},
+		['pcaramelfrappucino'] 	     	 = {['name'] = 'pcaramelfrappucino', 			['label'] = 'Caramel Frappucino',['weight'] = 1000, 	['type'] = 'item', 		['image'] = 'pcaramelfrappucino.png',['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Caramel Frappucino'},
+		['pcoldbrewlatte'] 	     	 	 = {['name'] = 'pcoldbrewlatte', 				['label'] = 'Cold Brew Latte', 	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcoldbrewlatte.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Cold Brew Latte'},
+		['pstrawberryvanillaoatlatte'] 	 = {['name'] = 'pstrawberryvanillaoatlatte',	['label'] = 'Strawberry Vanilla Oat Latte',['weight'] = 1000,['type'] = 'item', ['image'] = 'pstrawberryvanillaoatlatte.png',['unique'] = false,['useable'] = true, ['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Strawberry Vanilla Oat Latte'},
+		['pespressocoffeecup'] 	 		 = {['name'] = 'pespressocoffeecup',			['label'] = 'Espresso Coffee Cup',['weight'] = 1000, 	['type'] = 'item', 		['image'] = 'pespressocoffeecup.png',['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Espresso Coffee Cup'},
+		['pmilk'] 	     		 		 = {['name'] = 'pmilk', 						['label'] = 'Milk', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmilk.png', 		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Milk'},
+		['pcoffeebeans'] 	         	 = {['name'] = 'pcoffeebeans', 					['label'] = 'Coffee Beans', 	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcoffeebeans.png', ['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Coffee Beans'},
+		['pcream'] 	     		 		 = {['name'] = 'pcream', 						['label'] = 'Whipped Cream', 	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcream.png', 		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Whipped Cream'},
+		['phighcoffeeglasscup'] 	     = {['name'] = 'phighcoffeeglasscup', 			['label'] = 'High Coffee Glass',['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'phighcoffeeglasscup.png',['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Empty High Coffee Glass'},
+		['pcaramelsyrup'] 	     		 = {['name'] = 'pcaramelsyrup', 			    ['label'] = 'Caramel Syrup', 	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcaramelsyrup.png',['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Caramel Syrup'},
+		['pcoffeeglass'] 	     		 = {['name'] = 'pcoffeeglass', 					['label'] = 'Coffee Glass', 	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcoffeeglass.png', ['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Empty Coffee Glass'},
+		['pcocacola'] 	     		 	 = {['name'] = 'pcocacola', 					['label'] = 'Coca Cola', 		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcocacola.png', 	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Coca Cola'},
+		['psprite'] 	     		 	 = {['name'] = 'psprite', 						['label'] = 'Sprite', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'psprite.png', 		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Sprite'},
+		['ppepper'] 	     		 	 = {['name'] = 'ppepper', 						['label'] = 'DR.Pepper', 		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppepper.png', 		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'DR.Pepper'},
+		['ppizzabase'] 	     		 	 = {['name'] = 'ppizzabase', 					['label'] = 'Pizza Base', 		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzabase.png', 	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pizza Base'},
+		['ptomatosouce'] 	     		 = {['name'] = 'ptomatosouce', 					['label'] = 'Tomato Souce', 	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ptomatosouce.png', ['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Tomato Souce'},
+		['pbasil'] 	     		 		 = {['name'] = 'pbasil', 						['label'] = 'Basil', 			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbasil.png', 		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Basil'},
+		['pmozzarella'] 	     		 = {['name'] = 'pmozzarella', 					['label'] = 'Fresh Mozzarella', ['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmozzarella.png', 	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Fresh Mozzarella'},
+		['pmargharita'] 	 		 	 = {['name'] = 'pmargharita',					['label'] = 'Margharita Pizza',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmargharita.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Margharita Pizza'},
+		['pnapollitano'] 	 		 	 = {['name'] = 'pnapollitano',					['label'] = 'Napollitano Pizza',['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pnapollitano.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Napollitano Pizza'},
+		['pmushroomspizza'] 	 		 = {['name'] = 'pmushroomspizza',				['label'] = 'Mushrooms Pizza',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmushroomspizza.png',['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Mushrooms Pizza'},
+		['pmushrooms'] 	 		 		 = {['name'] = 'pmushrooms',					['label'] = 'Mushrooms',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmushrooms.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Mushrooms'},
+		['pbutter'] 	 		 		 = {['name'] = 'pbutter',						['label'] = 'Butter',			['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbutter.png',		['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Butter'},
+		['pseafood'] 	 		 		 = {['name'] = 'pseafood',						['label'] = 'Seafood Pizza',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pseafood.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pizza Seafood'},
+		['pseafoodmix'] 	 		 	 = {['name'] = 'pseafoodmix',					['label'] = 'Seafood Mix',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pseafoodmix.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Seafood Mix'},
+		['pvegpizza'] 	 		 		 = {['name'] = 'pvegpizza',						['label'] = 'Vegetarian Pizza',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pvegpizza.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Vegetarian Pizza'},
+		['pvegicheese'] 	 		 	 = {['name'] = 'pvegicheese',					['label'] = 'Vegetarian Cheese',['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pvegicheese.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Vegetarian Cheese'},
+		['ptomatoes'] 	 		 	 	 = {['name'] = 'ptomatoes',						['label'] = 'Fresh Tomatoes',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ptomatoes.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Fresh Tomatoes'},
+		['pmacncheese'] 	 		 	 = {['name'] = 'pmacncheese',					['label'] = 'Mac N Cheese',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pmacncheese.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Mac N Cheese'},
+		['pelbowmacaroni'] 	 		 	 = {['name'] = 'pelbowmacaroni',				['label'] = 'Elbow Macaroni',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pelbowmacaroni.png',['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Elbow Macaroni'},
+		['pcheddarcheese'] 	 		 	 = {['name'] = 'pcheddarcheese',				['label'] = 'Cheddar Cheese',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pcheddarcheese.png',['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Cheddar Cheese'},
+		['pparmesancheese'] 	 		 = {['name'] = 'pparmesancheese',				['label'] = 'Parmesan Cheese',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pparmesancheese.png',['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Parmesan Cheese'},
+		['pporkmeat'] 	 		 	     = {['name'] = 'pporkmeat',						['label'] = 'Pork Meat',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pporkmeat.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pork Meat'},
+		['pbbqporkmac'] 	 		 	 = {['name'] = 'pbbqporkmac',					['label'] = 'BBQ Pork Mac',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbbqporkmac.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'BBQ Pork Mac N Cheese'},
+		['pbbqsouce'] 	 		 	     = {['name'] = 'pbbqsouce',						['label'] = 'BBQ Souce',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pbbqsouce.png',	['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'BBQ Souce'},
+		['pfresca'] 	 		 	 	 = {['name'] = 'pfresca',						['label'] = 'Pasta Fresca',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pfresca.png',		['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Pasta Fresca'},
+		['pregularpasta'] 	 		 	 = {['name'] = 'pregularpasta',					['label'] = 'Regular Pasta',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'pregularpasta.png',['unique'] = false, 		['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Regular Pasta'},
+		['pmargharitaslice'] 	 		 = {['name'] = 'pmargharitaslice',				['label'] = 'Margharita Slice',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzaslice.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Margharita Slice'},
+		['pnapollitanoslice'] 	 		 = {['name'] = 'pnapollitanoslice',				['label'] = 'Napollitano Slice',['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzaslice.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Napollitano Slice'},
+		['pmushroomspizzaslice'] 	 	 = {['name'] = 'pmushroomspizzaslice',			['label'] = 'Fungi slice',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzaslice.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Fungi Slice'},
+		['pseafoodslice'] 	 		 	 = {['name'] = 'pseafoodslice',					['label'] = 'Seafood Slice',	['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzaslice.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Seafood Slice'},
+		['pvegpizzaslice'] 	 		 	 = {['name'] = 'pvegpizzaslice',				['label'] = 'Vegi Slice',		['weight'] = 1000, 		['type'] = 'item', 		['image'] = 'ppizzaslice.png',	['unique'] = false, 		['useable'] = true, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Vegi Slice'},
+	--24/7
+	['cigarette'] 						 = {['name'] = 'L&D', 			  	  		['label'] = 'L&D', 					['weight'] = 0, 		['type'] = 'item', 		['image'] = 'cigarette.png', 				['unique'] = false, 	['useable'] = true, 	['shouldClose'] = true,    ['combinable'] = nil,   ['description'] = 'Smoking Kills'},
+
+	--24/7 extras 
+	
+	['redslushy'] = {
+        ['name'] = 'redslushy',                         
+        ['label'] = 'Red Slushy',                     
+        ['weight'] = 750,         
+        ['type'] = 'item',         
+        ['image'] = 'redslushy.png',                
+        ['unique'] = true,     
+        ['useable'] = true,     
+        ['shouldClose'] = true,       
+        ['combinable'] = nil,   
+        ['description'] = 'Damn a Slushy...',
+
+    },
+    ['blueslushy'] = {
+        ['name'] = 'blueslushy',                         
+        ['label'] = 'Blue Slushy',                     
+        ['weight'] = 750,         
+        ['type'] = 'item',         
+        ['image'] = 'blueslushy.png',                
+        ['unique'] = true,     
+        ['useable'] = true,     
+        ['shouldClose'] = true,       
+        ['combinable'] = nil,  
+        ['description'] = 'Damn a Slushy...',
+
+    },
+    ['greenslushy'] = {
+        ['name'] = 'greenslushy',                         
+        ['label'] = 'Green Slushy',                     
+        ['weight'] = 750,         
+        ['type'] = 'item',         
+        ['image'] = 'greenslushy.png',                
+        ['unique'] = true,     
+        ['useable'] = true,     
+        ['shouldClose'] = true,       
+        ['combinable'] = nil,
+        ['description'] = 'Damn a Slushy...',
+
+    },
+    ['yellowslushy'] = {
+        ['name'] = 'yellowslushy',                         
+        ['label'] = 'Yellow Slushy',                     
+        ['weight'] = 750,         
+        ['type'] = 'item',         
+        ['image'] = 'yellowslushy.png',                
+        ['unique'] = true,     
+        ['useable'] = true,     
+        ['shouldClose'] = true,       
+        ['combinable'] = nil,
+        ['description'] = 'Damn a Slushy...',
+
+    },
+    ['orangeslushy'] = {
+        ['name'] = 'orangeslushy',                         
+        ['label'] = 'Orange Slushy',                     
+        ['weight'] = 750,         
+        ['type'] = 'item',         
+        ['image'] = 'orangeslushy.png',                
+        ['unique'] = true,     
+        ['useable'] = true,     
+        ['shouldClose'] = true,       
+        ['combinable'] = nil,
+        ['description'] = 'Damn a Slushy...',
+
+    },
+    ['rainbowslushy'] = {
+        ['name'] = 'rainbowslushy',                         
+        ['label'] = 'Rainbow Slushy',                     
+        ['weight'] = 750,         
+        ['type'] = 'item',         
+        ['image'] = 'rainbowslushy.png',                
+        ['unique'] = true,     
+        ['useable'] = true,     
+        ['shouldClose'] = true,       
+        ['combinable'] = nil,
+        ['description'] = 'Damn a Slushy...',
+
+    },
+    ["superdonut"] = {
+        ["name"] = "superdonut",
+        ["label"] = "Slucky Bucky Donut",
+        ["weight"] = 200,
+        ["type"] = "item",
+        ["image"] = "superdonut.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A Donut filled with Juices!",
+
+    },
+    ["vanillaicecream"] = {
+        ["name"] = "vanillaicecream",
+        ["label"] = "Vanilla Ice Cream",
+        ["weight"] = 350,
+        ["type"] = "item",
+        ["image"] = "vanillaicecream.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A bowl filled with Vanilla Ice Cream!",
+
+    },
+    ["chocolateicecream"] = {
+        ["name"] = "chocolateicecream",
+        ["label"] = "Chocolate Ice Cream",
+        ["weight"] = 350,
+        ["type"] = "item",
+        ["image"] = "chocolateicecream.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A bowl filled with Chocolate Ice Cream!",
+
+    },
+    ["minticecream"] = {
+        ["name"] = "minticecream",
+        ["label"] = "Mint Ice Cream",
+        ["weight"] = 350,
+        ["type"] = "item",
+        ["image"] = "minticecream.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A bowl filled with Mint Ice Cream!",
+
+    },
+    ["cookiesandcreamicecream"] = {
+        ["name"] = "cookiesandcreamicecream",
+        ["label"] = "Cookies & Cream Ice Cream",
+        ["weight"] = 350,
+        ["type"] = "item",
+        ["image"] = "cookiesandcreamicecream.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A bowl filled with Cookies & Cream Ice Cream!",
+
+    },
+    ["bubblegum_gumball"] = {
+        ["name"] = "bubblegum_gumball",
+        ["label"] = "BubbleGum GumBall",
+        ["weight"] = 50,
+        ["type"] = "item",
+        ["image"] = "bubblegum_gumball.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A BubbleGum GumBall from the local Store!",
+    },
+    ["blueberry_gumball"] = {
+        ["name"] = "blueberry_gumball",
+        ["label"] = "Blueberry GumBall",
+        ["weight"] = 50,
+        ["type"] = "item",
+        ["image"] = "blueberry_gumball.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A Blueberry GumBall from the local Store!",
+    },
+    ["banana_gumball"] = {
+        ["name"] = "banana_gumball",
+        ["label"] = "Banana GumBall",
+        ["weight"] = 50,
+        ["type"] = "item",
+        ["image"] = "banana_gumball.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A Banana GumBall from the local Store!",
+    },
+    ["mint_gumball"] = {
+        ["name"] = "mint_gumball",
+        ["label"] = "Mint GumBall",
+        ["weight"] = 50,
+        ["type"] = "item",
+        ["image"] = "mint_gumball.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A Mint GumBall from the local Store!",
+    },
+    ["cherry_gumball"] = {
+        ["name"] = "cherry_gumball",
+        ["label"] = "Cherry GumBall",
+        ["weight"] = 50,
+        ["type"] = "item",
+        ["image"] = "cherry_gumball.png",
+        ["unique"] = false,
+        ["useable"] = true,
+        ["shouldClose"] = true,
+        ["combinable"] = nil,
+        ["description"] = "A Cherry GumBall from the local Store!",
+    },
+	--lotto 
+	["lotto"] = {
+		["name"] = "lotto",
+		["label"] = "Lotto ticket",
+		["weight"] = 10,
+		["type"] = "item", 
+		["image"] = "lotto.png",
+		["unique"] = false, 
+		["useable"] = true, 
+		["shouldClose"] = true,  
+		["combinable"] = nil,  
+		["description"] = "Lucky Ticket"},
+
+
+	-- jim-mining stuff
+	["stone"] 		 	 			 = {["name"] = "stone",           				["label"] = "Stone",	 				["weight"] = 2000, 	    ["type"] = "item", 		["image"] = "stone.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Stone woo"},
+
+["uncut_emerald"] 				 = {["name"] = "uncut_emerald", 			  	["label"] = "Uncut Emerald", 			["weight"] = 100, 		["type"] = "item", 		["image"] = "uncut_emerald.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A rough Emerald"},
+["uncut_ruby"] 					 = {["name"] = "uncut_ruby", 			  	  	["label"] = "Uncut Ruby", 				["weight"] = 100, 		["type"] = "item", 		["image"] = "uncut_ruby.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A rough Ruby"},
+["uncut_diamond"] 				 = {["name"] = "uncut_diamond", 			  	["label"] = "Uncut Diamond", 			["weight"] = 100, 		["type"] = "item", 		["image"] = "uncut_diamond.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A rough Diamond"},
+["uncut_sapphire"] 				 = {["name"] = "uncut_sapphire", 			  	["label"] = "Uncut Sapphire", 			["weight"] = 100, 		["type"] = "item", 		["image"] = "uncut_sapphire.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A rough Sapphire"},
+
+["emerald"] 					 = {["name"] = "emerald", 			  	  		["label"] = "Emerald", 					["weight"] = 100, 		["type"] = "item", 		["image"] = "emerald.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A Emerald that shimmers"},
+["ruby"] 						 = {["name"] = "ruby", 			  	  			["label"] = "Ruby", 					["weight"] = 100, 		["type"] = "item", 		["image"] = "ruby.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A Ruby that shimmers"},
+["diamond"] 					 = {["name"] = "diamond", 			  	  		["label"] = "Diamond", 					["weight"] = 100, 		["type"] = "item", 		["image"] = "diamond.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A Diamond that shimmers"},
+["sapphire"] 					 = {["name"] = "sapphire", 			  	  		["label"] = "Sapphire",					["weight"] = 100, 		["type"] = "item", 		["image"] = "sapphire.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A Sapphire that shimmers"},
+
+["gold_ring"] 					 = {["name"] = "gold_ring", 			  	  	["label"] = "Gold Ring", 				["weight"] = 200, 		["type"] = "item", 		["image"] = "gold_ring.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["diamond_ring"] 				 = {["name"] = "diamond_ring", 			  	  	["label"] = "Diamond Ring", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "diamond_ring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["ruby_ring"] 					 = {["name"] = "ruby_ring", 			  	  	["label"] = "Ruby Ring", 				["weight"] = 200, 		["type"] = "item", 		["image"] = "ruby_ring.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["sapphire_ring"] 				 = {["name"] = "sapphire_ring", 			  	["label"] = "Sapphire Ring", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "sapphire_ring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["emerald_ring"] 				 = {["name"] = "emerald_ring", 			  	  	["label"] = "Emerald Ring", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "emerald_ring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+	
+["silver_ring"] 				 = {["name"] = "silver_ring", 			  		["label"] = "Silver Ring", 				["weight"] = 200, 		["type"] = "item", 		["image"] = "silver_ring.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["diamond_ring_silver"] 		 = {["name"] = "diamond_ring_silver", 		  	["label"] = "Diamond Ring Silver", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "diamond_ring_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["ruby_ring_silver"] 			 = {["name"] = "ruby_ring_silver", 			  	["label"] = "Ruby Ring Silver", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "ruby_ring_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["sapphire_ring_silver"] 		 = {["name"] = "sapphire_ring_silver", 		 	["label"] = "Sapphire Ring Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "sapphire_ring_silver.png", ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["emerald_ring_silver"] 		 = {["name"] = "emerald_ring_silver", 		  	["label"] = "Emerald Ring Silver", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "emerald_ring_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+
+["goldchain"] 				 	 = {["name"] = "goldchain", 			  	  	["label"] = "Golden Chain", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "goldchain.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["diamond_necklace"] 			 = {["name"] = "diamond_necklace", 			  	["label"] = "Diamond Necklace", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "diamond_necklace.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["ruby_necklace"] 				 = {["name"] = "ruby_necklace", 			  	["label"] = "Ruby Necklace", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "ruby_necklace.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["sapphire_necklace"] 			 = {["name"] = "sapphire_necklace", 			["label"] = "Sapphire Necklace", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "sapphire_necklace.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["emerald_necklace"] 			 = {["name"] = "emerald_necklace", 			  	["label"] = "Emerald Necklace", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "emerald_necklace.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+	
+["silverchain"] 				 = {["name"] = "silverchain", 			  	 	["label"] = "Silver Chain", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "silverchain.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["diamond_necklace_silver"] 	 = {["name"] = "diamond_necklace_silver", 		["label"] = "Diamond Necklace Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "diamond_necklace_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["ruby_necklace_silver"] 		 = {["name"] = "ruby_necklace_silver", 			["label"] = "Ruby Necklace Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "ruby_necklace_silver.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["sapphire_necklace_silver"] 	 = {["name"] = "sapphire_necklace_silver", 		["label"] = "Sapphire Necklace Silver", ["weight"] = 200, 		["type"] = "item", 		["image"] = "sapphire_necklace_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["emerald_necklace_silver"] 	 = {["name"] = "emerald_necklace_silver", 		["label"] = "Emerald Necklace Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "emerald_necklace_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+	
+["goldearring"] 				 = {["name"] = "goldearring", 				  	["label"] = "Golden Earrings", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "gold_earring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["diamond_earring"] 			 = {["name"] = "diamond_earring", 			  	["label"] = "Diamond Earrings", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "diamond_earring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["ruby_earring"] 				 = {["name"] = "ruby_earring", 			  		["label"] = "Ruby Earrings", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "ruby_earring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["sapphire_earring"] 			 = {["name"] = "sapphire_earring", 				["label"] = "Sapphire Earrings", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "sapphire_earring.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["emerald_earring"] 			 = {["name"] = "emerald_earring", 			  	["label"] = "Emerald Earrings", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "emerald_earring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+		
+["silverearring"] 				 = {["name"] = "silverearring", 				["label"] = "Silver Earrings", 			["weight"] = 200, 		["type"] = "item", 		["image"] = "silver_earring.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["diamond_earring_silver"] 		 = {["name"] = "diamond_earring_silver", 		["label"] = "Diamond Earrings Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "diamond_earring_silver.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["ruby_earring_silver"] 		 = {["name"] = "ruby_earring_silver", 			["label"] = "Ruby Earrings Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "ruby_earring_silver.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["sapphire_earring_silver"] 	 = {["name"] = "sapphire_earring_silver", 		["label"] = "Sapphire Earrings Silver", ["weight"] = 200, 		["type"] = "item", 		["image"] = "sapphire_earring_silver.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["emerald_earring_silver"] 		 = {["name"] = "emerald_earring_silver", 		["label"] = "Emerald Earrings Silver", 	["weight"] = 200, 		["type"] = "item", 		["image"] = "emerald_earring_silver.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+	
+["carbon"] 					 	 = {["name"] = "carbon", 			  	  		["label"] = "Carbon", 					["weight"] = 1000, 		["type"] = "item", 		["image"] = "carbon.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Carbon, a base ore."},
+["ironore"] 					 = {["name"] = "ironore", 			  	  		["label"] = "Iron Ore", 				["weight"] = 1000, 		["type"] = "item", 		["image"] = "ironore.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Iron, a base ore."},
+["copperore"] 					 = {["name"] = "copperore", 			  	  	["label"] = "Copper Ore", 				["weight"] = 1000, 		["type"] = "item", 		["image"] = "copperore.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Copper, a base ore."},
+["goldore"] 					 = {["name"] = "goldore", 			  	  		["label"] = "Gold Ore", 				["weight"] = 1000, 		["type"] = "item", 		["image"] = "goldore.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Gold Ore"},
+["silverore"] 					 = {["name"] = "silverore", 			  	  	["label"] = "Silver Ore", 				["weight"] = 1000, 		["type"] = "item", 		["image"] = "silverore.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "Silver Ore"},
+	
+["goldingot"] 					 = {["name"] = "goldingot", 			  	  	["label"] = "Gold Ingot", 				["weight"] = 1000, 		["type"] = "item", 		["image"] = "goldingot.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+["silveringot"] 				 = {["name"] = "silveringot", 			  	  	["label"] = "Silver Ingot", 			["weight"] = 1000, 		["type"] = "item", 		["image"] = "silveringot.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = ""},
+		
+["pickaxe"] 					 = {["name"] = "pickaxe", 			  	  		["label"] = "Pickaxe", 					["weight"] = 1000, 		["type"] = "item", 		["image"] = "pickaxe.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "" },
+["miningdrill"] 				 = {["name"] = "miningdrill", 			  	  	["label"] = "Mining Drill", 			["weight"] = 1000, 		["type"] = "item", 		["image"] = "miningdrill.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "" },
+["mininglaser"] 				 = {["name"] = "mininglaser", 			  	  	["label"] = "Mining Laser", 			["weight"] = 900, 		["type"] = "item", 		["image"] = "mininglaser.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "" },
+["drillbit"] 					 = {["name"] = "drillbit", 			  	  		["label"] = "Drill Bit", 				["weight"] = 10, 		["type"] = "item", 		["image"] = "drillbit.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "" },
+	
+["goldpan"] 					 = {["name"] = "goldpan", 			  	  		["label"] = "Gold Panning Tray", 		["weight"] = 10, 		["type"] = "item", 		["image"] = "goldpan.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "" },
+	
+["bottle"] 						 = {["name"] = "bottle", 			  	  		["label"] = "Empty Bottle", 			["weight"] = 10, 		["type"] = "item", 		["image"] = "bottle.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A glass bottle"},
+["can"] 						 = {["name"] = "can", 			  	  			["label"] = "Empty Can", 				["weight"] = 10, 		["type"] = "item", 		["image"] = "can.png", 					["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "An empty can, good for recycling"},
+
+
+--business--
+["business_card"] 					 = {["name"] ="business_card", 			  	  		["label"] = "A business card", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "bctest.png", 			["unique"] = false,	 	["useable"] = true,			["created"] = nil,		["decay"] =nil, 	["shouldClose"] = false, ["combinable"] = nil,   ["description"] = "A businesscard"},
+["coupon"] 					 = {["name"] = "coupon", 			  	  		["label"] ="Coupon", 				["weight"] = 0, 		["type"] = "item", 		["image"] ="coupon.png", 				["unique"] = false,	 	["useable"] = true,		["created"] = nil,		["decay"] = nil, 	["shouldClose"] = false, ["combinable"] =nil,   ["description"] = "A Coupon"},
+["flyer"] 					 = {["name"] = "flyer", 			  	  		["label"] ="Flyer", 				["weight"] = 0, 		["type"] = "item", 		["image"] ="flyer.png", 				["unique"] = false,	 	["useable"] = true,		["created"] = nil,		["decay"] = nil, 	["shouldClose"] = false, ["combinable"] =nil,   ["description"] = "A Flyer"},
+
+--mechanic shop items 
+["mechanic_tools"] 				= {["name"] = "mechanic_tools", 			["label"] = "Mechanic tools", 		    ["weight"] = 0, 		["type"] = "item", 		["image"] = "mechanic_tools.png", 		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Needed for vehicle repairs"},
+["toolbox"] 					= {["name"] = "toolbox", 			 	  	["label"] = "Toolbox", 		            ["weight"] = 0, 		["type"] = "item", 		["image"] = "toolbox.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Needed for Performance part removal"},
+["ducttape"] 					= {["name"] = "ducttape", 			 	  	["label"] = "Duct Tape", 		       	["weight"] = 0, 		["type"] = "item", 		["image"] = "bodyrepair.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Good for quick fixes"},
+["mechboard"] 					= {["name"] = "mechboard", 			 	  	["label"] = "Mechanic Sheet", 		   	["weight"] = 0, 		["type"] = "item", 		["image"] = "mechboard.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+--Performance
+["turbo"] 		 	 		 	= {["name"] = "turbo", 						["label"] = "Supercharger Turbo", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "turbo.png", 				["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Who doesn't need a 65mm Turbo??"},
+["car_armor"] 					= {["name"] = "car_armor", 					["label"] = "Vehicle Armor", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "armour.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["nos"] 					    = {["name"] = "nos", 			 	  	  	["label"] = "NOS Bottle", 		        ["weight"] = 0, 		["type"] = "item", 		["image"] = "nos.png", 				    ["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "A full bottle of NOS"},
+["noscan"] 					    = {["name"] = "noscan", 			 	  	["label"] = "Empty NOS Bottle", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "noscan.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,  ["combinable"] = nil,   ["description"] = "An Empty bottle of NOS"},
+["noscolour"] 					= {["name"] = "noscolour", 			 	  	["label"] = "NOS Colour Injector", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "noscolour.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = false,  ["combinable"] = nil,   ["description"] = "Make that purge spray"},
+
+["engine1"] 				    = {["name"] = "engine1", 			 	  	["label"] = "Shonen Engine",            ["weight"] = 0, 		["type"] = "item", 		["image"] = "shonen.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["engine2"] 				    = {["name"] = "engine2", 			 	  	["label"] = "V8 Engine",        	    ["weight"] = 0, 		["type"] = "item", 		["image"] = "v8engine.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["engine3"] 				    = {["name"] = "engine3", 			 	  	["label"] = "V10 Engine",          		["weight"] = 0, 		["type"] = "item", 		["image"] = "v10engine.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["engine4"] 				    = {["name"] = "engine4", 			 	  	["label"] = "V12 Engine",               ["weight"] = 0, 		["type"] = "item", 		["image"] = "v12engine.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["transmission1"] 				= {["name"] = "transmission1", 				["label"] = "Transmission Lvl 1",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "transmission1.png",  		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["transmission2"] 				= {["name"] = "transmission2", 				["label"] = "Transmission Lvl 2",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "transmission2.png",  		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["transmission3"] 				= {["name"] = "transmission3",				["label"] = "Transmission Lvl 3",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "transmission3.png",   		["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["brakes1"] 					= {["name"] = "brakes1", 			 		["label"] = "Performance Brakes",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "brakes1.png", 		    	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["brakes2"] 					= {["name"] = "brakes2", 			 		["label"] = "GT Big Brakes",            ["weight"] = 0, 		["type"] = "item", 		["image"] = "brakes2.png", 		    	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["brakes3"] 					= {["name"] = "brakes3", 			 		["label"] = "Competition Brakes",       ["weight"] = 0, 		["type"] = "item", 		["image"] = "brakes3.png", 		    	["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["suspension1"] 				= {["name"] = "suspension1", 				["label"] = "Lowered Suspension", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension1.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["suspension2"] 				= {["name"] = "suspension2",  				["label"] = "Street Suspension",		["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension2.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Street Racing level Suspension"},
+["suspension3"] 				= {["name"] = "suspension3",  				["label"] = "Racing Suspension",		["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension3.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Street Racing level Suspension"},
+["suspension4"] 				= {["name"] = "suspension4",  				["label"] = "Rally Suspension",			["weight"] = 0, 		["type"] = "item", 		["image"] = "suspension4.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = "Street Racing level Suspension"},
+
+["bprooftires"] 				= {["name"] = "bprooftires", 			   	["label"] = "Bulletproof Tires", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "bprooftires.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["drifttires"] 					= {["name"] = "drifttires", 			   	["label"] = "Drift Tires", 				["weight"] = 0, 		["type"] = "item", 		["image"] = "drifttires.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+--Cosmetics
+["underglow_controller"] 		 = {["name"] = "underglow_controller", 		["label"] = "Neon Controller", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "underglow_controller.png", ["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   	["description"] = "RGB LED Vehicle Remote"},
+["headlights"] 		 	 		 = {["name"] = "headlights", 				["label"] = "Xenon Headlights", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "headlights.png", 			["unique"] = true, 	["useable"] = true, 	["shouldClose"] = true,    ["combinable"] = nil,   	["description"] = "8k HID headlights"},
+
+["tint_supplies"] 				 = {["name"] = "tint_supplies", 			["label"] = "Tint Supplies", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "tint_supplies.png", 		["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,    ["description"] = "Supplies for window tinting"},
+
+["customplate"] 				 = {["name"] = "customplate", 				["label"] = "Customized Plates", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "plate.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["hood"] 						 = {["name"] = "hood", 						["label"] = "Vehicle Hood", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "hood.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["roof"] 						 = {["name"] = "roof", 						["label"] = "Vehicle Roof", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "roof.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["spoiler"] 					 = {["name"] = "spoiler", 					["label"] = "Vehicle Spoiler", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "spoiler.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["bumper"] 						 = {["name"] = "bumper", 					["label"] = "Vehicle Bumper", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "bumper.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["skirts"] 						 = {["name"] = "skirts", 					["label"] = "Vehicle Skirts", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "skirts.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["exhaust"] 					 = {["name"] = "exhaust", 					["label"] = "Vehicle Exhaust", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "exhaust.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["seat"] 						 = {["name"] = "seat", 						["label"] = "Seat Cosmetics", 			["weight"] = 0, 		["type"] = "item", 		["image"] = "seat.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["rollcage"] 					 = {["name"] = "rollcage", 					["label"] = "Roll Cage", 				["weight"] = 0, 		["type"] = "item", 		["image"] = "rollcage.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["rims"] 						 = {["name"] = "rims", 						["label"] = "Custom Wheel Rims", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "rims.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["livery"] 						 = {["name"] = "livery", 					["label"] = "Livery Roll", 				["weight"] = 0, 		["type"] = "item", 		["image"] = "livery.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["paintcan"] 					 = {["name"] = "paintcan", 					["label"] = "Vehicle Spray Can", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "spraycan.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["tires"] 						 = {["name"] = "tires", 					["label"] = "Drift Smoke Tires",        ["weight"] = 0, 		["type"] = "item", 		["image"] = "tires.png", 	  		    ["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["horn"] 						 = {["name"] = "horn", 						["label"] = "Custom Vehicle Horn", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "horn.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+["internals"] 					 = {["name"] = "internals", 				["label"] = "Internal Cosmetics", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "internals.png", 			["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+["externals"] 					 = {["name"] = "externals", 				["label"] = "Exterior Cosmetics", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "mirror.png", 				["unique"] = true, 		["useable"] = true, 	["shouldClose"] = true,   ["combinable"] = nil,   ["description"] = ""},
+
+
+['vape'] = {['name'] = 'vape', ['label'] = 'Vape Kit', ['weight'] = 100, ['type'] = 'item', ['image'] = 'vape.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description'},
+['vape2'] = {['name'] = 'vape2', ['label'] = 'Big Vape Kit', ['weight'] = 100, ['type'] = 'item', ['image'] = 'vape2.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description'},
+['vape_liquid'] = {['name'] = 'vape_liquid', ['label'] = 'Vape Liquid', ['weight'] = 100, ['type'] = 'item', ['image'] = 'vape2.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Your description'},
+
+--Six Heroin
+["poppy_plant"] 				 = {["name"] = "poppy_plant", 			 		 ["label"] = "Poppy Plant", 		["weight"] = 500, 		["type"] = "item", 		["image"] = "poppy_plant.png", 				    ["unique"] = false, 		["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "poppys."},
+["opium"] 					 	 = {["name"] = "opium", 			 	 		["label"] = "Opium", 		["weight"] = 0, 		["type"] = "item", 		["image"] = "opium.png", 				    ["unique"] = true, 		["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Opium seeds"},
+["bunsen_burner"] 				 = {["name"] = "bunsen_burner", 			 	 ["label"] = "Bunsen Burner", 		["weight"] = 500, 		["type"] = "item", 		["image"] = "bunsen_burner.png", 				    ["unique"] = false, 		["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Used for Science"},
+["heroin"] 						 = {["name"] = "heroin", 			 			 ["label"] = "Herion", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "heroin.png", 				    ["unique"] = true, 		["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Gray death"},
+["syringe"] 					 = {["name"] = "syringe", 			 	 		["label"] = "Pack Of Syringes", 		["weight"] = 200, 		["type"] = "item", 		["image"] = "syringe.png", 				    ["unique"] = false, 		["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["description"] = "Pack of syringes and needles"},
+['heroin_shot']			 		 = {['name'] = 'heroin_shot', 					['label'] = 'Heroin Shot', 				['weight'] = 100, 		['type'] = 'item', 		['image'] = 'heroin_shot.png', 			['unique'] = false, 	['useable'] = true,  	['shouldClose'] = true,   ['combinable'] = nil, ['description'] = 'Needle shot of Heroin'},
+['lighter'] 				 	 = {['name'] = 'lighter', 			  	  		['label'] = 'Lighter', 					['weight'] = 0, 		['type'] = 'item', 		['image'] = 'lighter.png', 				['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,   ['description'] = 'Who pocket my lighter?'},
+['spoon']			 		 = {['name'] = 'spoon', 					['label'] = 'Spoon', 				['weight'] = 0, 		['type'] = 'item', 		['image'] = 'spoon.png', 			['unique'] = true, 	['useable'] = false,  	['shouldClose'] = true,   ['combinable'] = nil, ['description'] = 'Not For Smoking Crack'},
+
+--BoomBox
+["boombox"] 				 	 = {["name"] = "boombox", 			  	  	["label"] = "boombox", 				["weight"] = 1000, 		["type"] = "item", 		["image"] = "boombox.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["description"] = ""},
+
+-- All Drug Processing Items 
+--["wet_weed"] 		 	 	 	 = {["name"] = "wet_weed",           			["label"] = "Moist Weed",	 			["weight"] = 3000, 		["type"] = "item", 		["image"] = "wet_weed.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Wet weed that needs to be treated!"},
+["coke"] 		 	 	 	     = {["name"] = "coke",           				["label"] = "Cocaine", 					["weight"] = 1000,		["type"] = "item", 		["image"] = "coke.png", 				["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Processed cocaine"},
+["coca_leaf"] 		 	 	 	 = {["name"] = "coca_leaf",           			["label"] = "Cocaine leaves",	 		["weight"] = 1500,		["type"] = "item", 		["image"] = "coca_leaf.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Cocaine leaves that must be processed !"},
+["cannabis"] 			 		 = {["name"] = "cannabis", 						["label"] = "Cannabis", 				["weight"] = 2500, 		["type"] = "item", 		["image"] = "cannabis.png", 			["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Uncured cannabis"},
+["marijuana"] 			 		 = {["name"] = "marijuana", 					["label"] = "Marijuana", 				["weight"] = 500,		["type"] = "item", 		["image"] = "marijuana.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Some fine smelling buds."},
+["chemicals"] 		 	 	 	 = {["name"] = "chemicals",           			["label"] = "Chemicals",	 			["weight"] = 1500, 		["type"] = "item", 		["image"] = "chemicals.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Chemicals, handle with care..."},
+["poppyresin"] 		 	 	 	 = {["name"] = "poppyresin",           			["label"] = "Poppy resin",	 			["weight"] = 2000, 		["type"] = "item", 		["image"] = "poppyresin.png", 			["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "It sticks to your fingers when you handle it."},
+["lsa"] 		 	 	 	     = {["name"] = "lsa",           				["label"] = "LSA",	 					["weight"] = 500, 		["type"] = "item", 		["image"] = "lsa.png", 					["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Almost ready to party..."},
+["lsd"] 		 	 	 	     = {["name"] = "lsd",           				["label"] = "LSD",	 					["weight"] = 500, 		["type"] = "item", 		["image"] = "lsd.png", 					["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Lets get this party started!"},
+["meth"] 		 	 	 	     = {["name"] = "meth",           				["label"] = "Meth",	 					["weight"] = 500, 		["type"] = "item", 		["image"] = "meth.png", 				["unique"] = false, 	["useable"] = true, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Really addictive stimulant..."},
+["hydrochloric_acid"] 			 = {["name"] = "hydrochloric_acid", 			["label"] = "Hydrochloric Acid",		["weight"] = 1500, 		["type"] = "item", 		["image"] = "hydrochloric_acid.png", 	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Chemicals, handle with care!"},
+["sodium_hydroxide"] 			 = {["name"] = "sodium_hydroxide", 				["label"] = "Sodium Hydroxide", 		["weight"] = 1500, 		["type"] = "item", 		["image"] = "sodium_hydroxide.png", 	["unique"] = false, 	["useable"] = true, 	["shouldClose"] = true,	   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Chemicals, handle with care!"},
+["sulfuric_acid"] 		 	 	 = {["name"] = "sulfuric_acid",           		["label"] = "Sulfuric Acid",	 		["weight"] = 1500, 		["type"] = "item", 		["image"] = "sulfuric_acid.png", 		["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Chemicals, handle with care!"},
+["thionyl_chloride"] 		 	 = {["name"] = "thionyl_chloride",           	["label"] = "Thionyl Chloride",	 		["weight"] = 1500, 		["type"] = "item", 		["image"] = "thionyl_chloride.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Chemicals, handle with care!"},
+["liquidmix"] 		 	 	     = {["name"] = "liquidmix",           		    ["label"] = "Liquid Chem Mix",	 		["weight"] = 1500, 		["type"] = "item", 		["image"] = "liquidmix.png", 		    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Chemicals, handle with care!"},
+["bakingsoda"] 		 	 	     = {["name"] = "bakingsoda",           		    ["label"] = "Baking Soda",	 		    ["weight"] = 1500, 		["type"] = "item", 		["image"] = "bakingsoda.png", 		    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Household Baking Soda!"},
+["chemicalvapor"] 		 	     = {["name"] = "chemicalvapor",           	    ["label"] = "Chemical Vapors",	 		["weight"] = 1500, 		["type"] = "item", 		["image"] = "chemicalvapor.png", 	    ["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "High Pressure Chemical Vapors, Explosive!"},
+["trimming_scissors"] 		 	 = {["name"] = "trimming_scissors",           	["label"] = "Trimming Scissors",	 	["weight"] = 1500, 		["type"] = "item", 		["image"] = "trimming_scissors.png", 	["unique"] = false, 	["useable"] = false, 	["shouldClose"] = false,   ["combinable"] = nil,   ["expire"] = 90,  ["description"] = "Very Sharp Trimming Scissors"},
+['methtray'] 					 = {['name'] = 'methtray', 						['label'] = 'Meth Tray', 				['weight'] = 200, 		['type'] = 'item', 		['image'] = 'meth_tray.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'make some meth'},
+['methkey'] 					 = {['name'] = 'methkey', 						['label'] = 'Key A', 				    ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'keya.png', 			    ['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Random Key, with "Walter" Engraved on the Back...'},
+['cocainekey'] 					 = {['name'] = 'cocainekey', 					['label'] = 'Key B', 				    ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'keyb.png', 			    ['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Random Key, with a "Razorblade" Engraved on the Back...'},
+['weedkey'] 					 = {['name'] = 'weedkey', 						['label'] = 'Key C', 				    ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'keyc.png', 			    ['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Random Key, with a "Seed" Engraved on the Back...'},
+['finescale'] 					 = {['name'] = 'finescale', 					['label'] = 'Fine Scale', 			    ['weight'] = 200, 		['type'] = 'item', 		['image'] = 'finescale.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Scale Used for Fine Powders and Materials.'},
+['coke_small_brick'] 		 	 = {['name'] = 'coke_small_brick', 				['label'] = 'Coke Package', 			['weight'] = 350, 		['type'] = 'item', 		['image'] = 'coke_small_brick.png', 	['unique'] = false, 	['useable'] = false, 	['shouldClose'] = true,	   ['combinable'] = nil,  ['description'] = 'Small package of cocaine, mostly used for deals and takes a lot of space'},
+
+--weed script
+['maleseed'] 			 = {['name'] = 'maleseed', 			 	['label'] = 'Male Seed', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'maleseed.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'A Male Seed'},
+['femaleseed'] 			 = {['name'] = 'femaleseed', 			 	['label'] = 'Female Seed', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'femaleseed.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'A weed bag with 2g White Widow'},
+
+
+--pets
+['pet_food'] 			 = {['name'] = 'Pet Food', 			 	['label'] = 'Pet Food', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'petfood.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Pet Food Hope It Hungry'},
+['pet_tracker'] 			 = {['name'] = 'Pet Tracker', 			 	['label'] = 'Pet Tracker', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'pettracker.png', 			['unique'] = false, 	['useable'] = false, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'Pet Tracker Wheres My Cat'},
+['pet_house'] 			 = {['name'] = 'Pet House', 			 	['label'] = 'Pet House', 			['weight'] = 200, 		['type'] = 'item', 		['image'] = 'pethouse.png', 			['unique'] = false, 	['useable'] = true, 	['shouldClose'] = false,   ['combinable'] = nil,   ['description'] = 'A Quaint Little Home'},
+
+
+--car radio twenty one piliots
+['carplay'] = {['name'] = 'carplay', ['label'] = 'Carplay', ['weight'] = 1000, ['type'] = 'item', ['image'] = 'carplay.png', ['unique'] = false, ['useable'] = true, ['shouldClose'] = true, ['combinable'] = nil, ['description'] = 'Device to controll your vehicle'}
+
 }
